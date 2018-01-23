@@ -15,20 +15,15 @@ class Index extends React.Component {
       <div className="index-container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
-        <main>
+        <main style={{minHeight: '100vh'}}>
+          <Navigation />
           <IndexHeadContainer>
-            <Navigation />
             <Hero>
-              <img src={config.siteLogo} width='150px' />
-              <h1>{config.siteTitle}</h1>
-              <h4>{config.siteDescription}</h4>
+              <ProjectName>{config.siteTitle}</ProjectName>
+              <h5 style={{marginTop: '5px', marginBottom: '25px'}}>{config.siteDescription}</h5>
+              <CtaButton to={'/hello-world'}>Get started</CtaButton>            
             </Hero>
           </IndexHeadContainer>
-          <BodyContainer>
-            <h2>A Gatsby Template for Content</h2>
-            <p>Made for modern documentation sites. Table of Contents automatically generated from markdown files. </p>
-            <CtaButton to={'/lesson-one'}>See Your First Post</CtaButton>
-          </BodyContainer>
         </main>
       </div>
     );
@@ -38,15 +33,29 @@ class Index extends React.Component {
 export default Index;
 
 const IndexHeadContainer = styled.div`
-  background: ${props => props.theme.brand};
-  padding: ${props => props.theme.sitePadding};
+  // background: ${props => props.theme.brand};
+  // padding: ${props => props.theme.sitePadding};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
   text-align: center;
+  height: fit-available;
+  overflow-y: none;
+`
+
+const ProjectName = styled.h1`
+  color: ${props => props.theme.brand}
 `
 
 const Hero = styled.div`
   padding: 50px 0;
   & > h1 {
-    font-weight: 600;
+    font-size: 12rem;
+    font-weight: 400;
+    font-family: 'Leckerli One';
+    letter-spacing: 0.2rem;    
+    // margin-bottom: 5px;
   }
 `
 

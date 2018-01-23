@@ -50,7 +50,7 @@ class TableOfContents extends React.Component {
             <Link to={node.path}>
               <li>
                 <span>
-                  <p>{node.chapter}.{node.lessonNumber} &nbsp;</p>
+                  <p>{node.lessonNumber}. &nbsp;</p>
                   <h6>{node.title}</h6>
                 </span>
               </li>
@@ -117,7 +117,7 @@ const LessonContainer = styled.div`
   &:hover {
     li {
       span {
-        border-bottom: 1px solid black;
+        // border-bottom: 1px solid black;
       }
     }
   }

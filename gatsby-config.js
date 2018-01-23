@@ -24,6 +24,8 @@ module.exports = {
       options: {
         fonts: [`crimson text:400, 400i, 700, 700i`,
           `space mono:400,700`,
+          `source sans pro:300, 900`,
+          `halant:400`
         ],
       }
     },

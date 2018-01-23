@@ -76,6 +76,10 @@ const BodyContainer = styled.div`
   & > div {
     max-width: ${props => props.theme.contentWidthLaptop};
     margin: auto;
+    margin-left: 120px;
+    @media screen and (max-width: 1000px) {
+      margin-left: 0;
+    }
   }
   
   & > h1 {
@@ -87,7 +91,7 @@ const HeaderContainer = styled.div`
   grid-column: 1 / 3;
   grid-row: 1 / 2;
   z-index: 2;
-   @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     order: 1;
   }
 `
@@ -95,7 +99,7 @@ const HeaderContainer = styled.div`
 const ToCContainer = styled.div`
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  background: ${props => props.theme.lightGrey};
+  // background: ${props => props.theme.lightGrey};
   overflow: scroll;
    @media screen and (max-width: 600px) {
     order: 3;

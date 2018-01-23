@@ -26,7 +26,7 @@ pre[class*="language-"] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    box-shadow: 0.05555555555555555rem 0.05555555555555555rem 1.1111111111111112rem rgba(20,20,20,0.37);
+    box-shadow: 0.05rem 0.05rem 1.1rem rgba(20,20,20,0.3);
 }
 
 /* Code blocks */
@@ -34,7 +34,7 @@ pre[class*="language-"] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 :not(pre) > code[class*="language-"],
