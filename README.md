@@ -4,6 +4,8 @@
 
 # Gatsby Docs Starter 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/clippedjs/clippedjs.github.io.svg)](https://greenkeeper.io/)
+
 #### This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 
 A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/).
